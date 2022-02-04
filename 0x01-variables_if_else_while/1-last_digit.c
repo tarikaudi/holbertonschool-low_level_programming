@@ -1,6 +1,5 @@
-#include<stdlib.h>
-#include<time.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - compare a random number if it is negative positive or 0
@@ -10,14 +9,11 @@
 int main(void)
 {
 	int n;
+	int LastDigit = n % 10;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n == 0)
-	printf("%d is zero\n", n);
-	else if (n < 0)
-	printf("%d is negative\n", n);
-	else if (n > 0)
-	printf("%d is positive\n", n);
+	
+	if (
 	return (0);
 }
