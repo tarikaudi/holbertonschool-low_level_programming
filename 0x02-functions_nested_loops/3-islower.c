@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <ctype.h>
 /**
  *_islower - says if it is lower and returns
  *@c: variable that is used by is lower
@@ -7,7 +7,7 @@
 */
 int _islower(int c)
 {
-	if (_islower(c))
+	if (islower(c))
 		return (1);
 	else
 		return (0);
