@@ -2,7 +2,7 @@
 #include "stdio.h"
 
 /**
-  * print_to_98 - Prints all natural numberts 
+  * print_to_98 - Prints all natural numberts
   * @n: variable used to store numbers
   *
   * Return: Always 0.
