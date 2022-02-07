@@ -7,23 +7,18 @@
 */
 void jack_bauer(void)
 {
-	int h, m;
+	int hour, minute;
 
-	h = 0;
-	m = 0;
-
-	while (h < 24)
+	for (hour = 0; hour <= 23; hour++)
 	{
-		while (m < 60)
+		for (minute = 0; minute <= 59; minute++)
 		{
-			_putchar((h / 10) + '0');
-			_putchar((h % 10) + '0');
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
 			_putchar(':');
-			_putchar((m / 10) + '0');
-			_putchar((m % 10) + '0');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
 			_putchar('\n');
-			m++;
 		}
-		h++;
 	}
 }
