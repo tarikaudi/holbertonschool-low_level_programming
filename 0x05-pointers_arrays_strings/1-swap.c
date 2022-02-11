@@ -2,8 +2,8 @@
 
 /**
  *swap_int - show absolute value
- *@*a: pointer
- *@*b: pointer2
+ *@a: pointer
+ *@b: pointer2
  *Return: return absolute value
 */
 void swap_int(int *a, int *b)
