@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *_isalpha - says if it is lower and returns
- *@c: variable that is used by is alpha
- *Return: return 1 if is lowercase 0 if it's not
+ *string_toupper - says if it is lower and returns
+ *@c: pointer
+ *Return: return the pointer
 */
 char *string_toupper(char *c)
 {
@@ -13,7 +13,6 @@ char *string_toupper(char *c)
 	{
 		if (c[i] >= 'a' && c[i] <= 'z')
 			c[i] -= 32;
-	
 		i++;
 	}
 
