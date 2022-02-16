@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- *_strlen - show absolute value
- *@s: pointer
+ *_strcmp - show absolute value
+ *@s1: pointer
+ *@s2: pointer
  *Return: return lenght
 */
 int _strcmp(char *s1, char *s2)
