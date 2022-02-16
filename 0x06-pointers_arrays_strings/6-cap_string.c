@@ -7,7 +7,6 @@
 */
 char *cap_string(char *n)
 {
-	
 	int i = 0;
 
 	if (n[i] > 96 && n[i] < 123)
