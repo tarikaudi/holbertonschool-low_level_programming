@@ -7,5 +7,8 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	
+	int i;
+	int suma;
+
+	for (i = 0; 	
 }
