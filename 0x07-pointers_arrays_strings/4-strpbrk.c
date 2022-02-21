@@ -4,6 +4,7 @@
  * _strpbrk - prints depending of accept
  * @s: first string
  * @accept: second string
+ * Return: return the pointer s
  */
 char *_strpbrk(char *s, char *accept)
 {
