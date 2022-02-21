@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * reverse_array - reverses an array
- * @a: array to reverse
- * @n: number of elements of the array
+ *_strchr: return the value of s
+ * @s: pointer
+ * @c: variable to compare
+ * Return: return the output depending on
  */
 char *_strchr(char *s, char c)
 {

@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * reverse_array - reverses an array
- * @a: array to reverse
- * @n: number of elements of the array
+ *_memset - sets the out
+ * @s: pointer
+ * @b: to be subst
+ * @n: numbre given by
+ * Return: the pointer
  */
 char *_memset(char *s, char b, unsigned int n)
 {

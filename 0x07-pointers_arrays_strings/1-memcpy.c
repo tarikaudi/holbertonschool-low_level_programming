@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
- * reverse_array - reverses an array
- * @a: array to reverse
- * @n: number of elements of the array
+ *_memcpy - copies
+ * @dest: first string
+ * @src: second string
+ * @n: variable to work with
+ * Return: dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i; 
+	unsigned int i;
 
 	for (i = 0; i < n; i++)
 	{
