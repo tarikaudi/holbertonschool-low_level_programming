@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- *_strchr: return the value of s
+ * _strchr - strchr locates the characters
  * @s: pointer
  * @c: variable to compare
  * Return: return the output depending on
  */
 char *_strchr(char *s, char c)
 {
-
 	while (*s)
 	{
 		if (*s != c)
 			s++;
-		else 
+		else
 			return (s);
 	}
 	if (c == '\0')
