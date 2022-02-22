@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- *_memcpy - copies
- * @dest: first string
- * @src: second string
- * @n: variable to work with
- * Return: dest
+ * set_string - set the string
+ * @s: first pointer
+ * @to: second ponter
  */
 void set_string(char **s, char *to)
 {
