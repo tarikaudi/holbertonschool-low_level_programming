@@ -1,39 +1,29 @@
-#include "main.h"
 #include <stdio.h>
-#include <ctype.h>
+#include <stdlib.h>
 
 /**
  *main - main main
- *@argc: arguments
- *@argv: strings of pointers
- *Return: 0 for
- **/
+ *@argc: argument
+ *@argv: string of pointer
+ * Return: 0 as always
+*/
 int main(int argc, char *argv[])
 {
-	int i, j;
-	int res = 0;
-	char *arr;
+	int num, sum, res = 0;
 
-	if (argc - 1 == 0)
+	for (num = 1; num < argc; num++)
 	{
-		printf("0\n");
-	}
-	else
-	{
-		for (i = 1; i < argc; i++)
+		for (sum = 0; argv[num][sum]; sum++)
 		{
-			arr = argv[i];
-			for (j = 0; arr[j] != '\0'; j++)
+			if (argv[num][sum] < '0' || argv[num][sum] > '9')
 			{
-				if (isdigit(arr[j]) == 0)
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
-			res += atoi(argv[i]);
 		}
-		printf("%d\n", res);
+		res += atoi(argv[num]);
 	}
+	printf("%d\n", res);
+
 	return (0);
 }
