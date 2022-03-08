@@ -1,5 +1,8 @@
-#include <stdio.h>
+#ifndef DOG_H
+#define DOG_H
 
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
 *struct dog - creates a stuct of dog
@@ -23,3 +26,5 @@ dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
 int putchar(char);
+
+#endif
