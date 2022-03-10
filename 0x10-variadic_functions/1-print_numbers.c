@@ -1,9 +1,9 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - main main
+ * print_numbers - main main
  * @n: args to be sum
- * Return: Sum
+ * @separator: separator
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -12,7 +12,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(list, n);
 
-	if(n > 0)
+	if (n > 0)
 	{
 		for (i = 1; i <= n; i++)
 		{
