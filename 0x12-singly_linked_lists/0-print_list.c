@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- *print_list - asd
- *@h: asd
- *Return: asd
+ *print_list - function main main 
+ *@h: struct
+ *Return: return i
  **/
 size_t print_list(const list_t *h)
 {
