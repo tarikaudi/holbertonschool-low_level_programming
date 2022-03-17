@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *print_list - function main main 
+ *print_list - function main main
  *@h: struct
  *Return: return i
  **/
