@@ -2,6 +2,7 @@
 #define LIST_H
 
 #include <stdio.h>
+#include <string.h>
 
 /**
  * struct list_s - singly linked list
@@ -17,6 +18,8 @@ typedef struct list_s
 	unsigned int len;
 	struct list_s *next;
 } list_t;
+
+int _strlen(const char *string);
 
 int _putchar(char c);
 
