@@ -18,4 +18,6 @@ int pop_listint(listint_t **head)
 	*head = aux2->next;
 
 	free(aux2);
+
+	return (result);
 }
