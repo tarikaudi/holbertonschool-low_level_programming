@@ -2,7 +2,7 @@
 
 /**
  *free_listint - main main
- *@head: pointer
+ *@head: pointer teste test test
  *Return: as always
  **/
 void free_listint(listint_t *head)
