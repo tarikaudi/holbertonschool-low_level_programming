@@ -1,20 +1,18 @@
 #include "lists.h"
 
 /**
- *free_list - main main
+ *free_listint - main main
  *@head: pointer
  *Return: as always
  **/
-void free_list(list_t *head)
+void free_listint(listint_t *head)
 {
-	list_t *actual, *next;
+	void *aux;
 
-	actual = head;
-
-	while (actual != NULL)
+	while (head)
 	{
-		next = actual->next;
-		free(actual);
-		actual = next;
+		aux = head;
+		head = head->next;
+		free(aux);
 	}
 }
