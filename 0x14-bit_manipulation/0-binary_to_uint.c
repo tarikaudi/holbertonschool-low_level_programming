@@ -7,24 +7,22 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int num = b;
-	int base = 1;
-	int rem;
-	int binary_value = b;
+	unsigned int binary = 0, power = 1, lenght;
+	int i;
 
 	if (b == NULL)
-	{
 		return (0);
-	}
-	else
+	lenght = strlen(b);
+	for (i = (ls - 1); i >= 0; i--)
 	{
-		while (b > 0)
+	
+		if (b[i] != 48 && b[i] != 49)
+			return (0);
+		if (b[i] == '1')
 		{
-		rem = num % 10;
-		decimal_value = decimal_value + rem * base;
-		num = num / 10 ;
-		base = base * 2;
+			binary += power;
 		}
+		power *= 2;
 	}
-	return (decimal_value);
+	return (binary);
 }
