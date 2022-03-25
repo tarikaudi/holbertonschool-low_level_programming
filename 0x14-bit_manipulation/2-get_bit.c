@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *get_bit - mai main
+ * get_bit - main main
  *@n: int
  *@index: index
  */
