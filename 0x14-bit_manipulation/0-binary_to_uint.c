@@ -12,8 +12,10 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 		return (0);
+
 	lenght = strlen(b);
-	for (i = (ls - 1); i >= 0; i--)
+
+	for (i = (lenght - 1); i >= 0; i--)
 	{
 	
 		if (b[i] != 48 && b[i] != 49)
