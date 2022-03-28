@@ -8,31 +8,36 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int length = 0;
-	int file, writer;
+	int length;
+	int val;
+	int file_ = open(filename, O_CREAT | O_RDONLY | O_WRONLY | O_TRUNC, 0600);
 
 	if (filename == NULL)
+	{
+		close(file_);
 		return (-1);
+	}
+
+	if (file_ == -1)
+	{
+		close(file_);
+		return (-1);
+	}
 
 	if (text_content == NULL)
-		return (1);
-
-	file = open(filename, O_WRONLY | O_APPEND);
-
-	if (file == -1)
 	{
-		return (-1);
+		text_content = "";
 	}
 
-	lenght = strlen(text_content);
+	length = strlen(text_content);
 
-	writer = write(file_d, text_content, len_content);
+	val = write(file_, text_content, length);
 
-	if (writer == -1)
+	if (val == -1)
 	{
-		close(file);
+		close(file_);
 		return (-1);
 	}
-	close(file);
+	close(file_);
 	return (1);
 }
