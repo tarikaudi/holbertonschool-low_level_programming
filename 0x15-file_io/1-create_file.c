@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *read_textfile - man main
+ *create_file - man main
  *@filename: file name
- *@letters: letter
+ *@text_content: letter
  *Return: return as always
  */
 int create_file(const char *filename, char *text_content)
