@@ -8,33 +8,31 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int file, writer, i = 0;
+	int length = 0;
+	int file, writer;
 
 	if (filename == NULL)
 		return (-1);
 
-	file = open(filename, O_RDWR | O_APPEND);
-	if (file == -1)
-		return (-1);
-
-
-
-	while (text_content[i])
-		i++;
-
 	if (text_content == NULL)
-	{
-		close(file);
 		return (1);
-	}
-	else
+
+	file = open(filename, O_WRONLY | O_APPEND);
+
+	if (file == -1)
 	{
-		writer = write(file, text_content, i);
+		return (-1);
 	}
+
+	lenght = strlen(text_content);
+
+	writer = write(file_d, text_content, len_content);
 
 	if (writer == -1)
+	{
+		close(file);
 		return (-1);
-
+	}
 	close(file);
 	return (1);
 }
