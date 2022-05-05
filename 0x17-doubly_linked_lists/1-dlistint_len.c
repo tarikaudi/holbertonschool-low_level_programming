@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *print_dlistint - main main
+ *dlistint_len - main main
  *@h: pointer
  *Return: counter
  */
@@ -14,5 +14,5 @@ size_t dlistint_len(const dlistint_t *h)
 		h = h->next;
 		count++;
 	}
-	return (count);	
+	return (count);
 }
